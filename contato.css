@@ -1,0 +1,96 @@
+.principal{
+	width: 940px;
+	margin: 0 auto;
+}
+
+.contato{
+	margin: 40px 0;
+}
+
+.contato label, .tipo-contato legend, .horario-atendimento legend{
+	display: block;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+ .input-padrao, .horario-atendimento select{
+	display: block;
+	margin: 10px 0 20px 0;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.tipo-contato{
+	padding-bottom: 10px;
+}
+
+.horario-atendimento select{
+	text-align: center;
+	box-sizing: content-box;
+}
+
+.enviar{
+	width: 50%;
+	padding: 15px 25px;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	margin-top: 10px;
+	transition: 1s all;
+	cursor: pointer;
+	box-sizing: content-box;
+}
+
+.enviar:hover{
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+.tabela {
+	margin: 20px 0 40px 0;
+}
+
+.tabela thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+.tabela th, .tabela td{
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+@media screen and (max-width: 480px){
+	.principal{
+		width: auto;
+	}
+	.contato label, .tipo-contato legend, .horario-atendimento legend{
+		width: 90%;
+		margin: 0 auto 10px auto;
+	}
+	.input-padrao{
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+	.horario-atendimento select, .enviar{
+		width: 90%;
+		margin: 10px auto 20px auto;
+		box-sizing: border-box;
+		display: block;
+	}
+	.enviar{
+		margin-top: 20px;
+	}
+	.tabela{
+		margin: 20px auto 40px auto;
+	}
+	.enviar:hover{
+	background: darkorange;
+	transform: scale(1.1);
+	}
+}

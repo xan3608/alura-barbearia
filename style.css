@@ -1,0 +1,72 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.cabecalho{
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa{
+	width: 940px;
+	position: relative;
+	margin: 0 auto;
+}
+
+nav{
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li{
+	display: inline;
+	margin: 0 8px 0 8px;
+}
+
+nav a{
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright{
+	color: #FFFFFF;
+	font-size: 13px;
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 480px){
+	.caixa{
+		width: 100%;
+	}
+	.caixa h1 {
+		text-align: center;
+	}
+	.caixa nav{
+		position: static;
+		display: flex;
+		justify-content: center;
+
+	}
+	.caixa nav ul{
+		display: inline-block;
+	}
+	.caixa nav ul li{
+		padding: 0 0.4em;
+		margin: 0;
+	}
+}
